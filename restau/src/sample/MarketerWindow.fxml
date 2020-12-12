@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MarketerWindowController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="222.0" styleClass="button">
+         <children>
+            <VBox layoutX="-1.0" layoutY="-6.0" prefHeight="518.0" prefWidth="241.0" styleClass="button">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/account-profile-user-icon--icon-search-engine-10.png" />
+                     </image></ImageView>
+                  <Label fx:id="showLabel" alignment="BASELINE_LEFT" prefHeight="30.0" prefWidth="176.0" text="Label">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="ViewProfile" mnemonicParsing="false" onAction="#ViewProfileAction" prefHeight="60.0" prefWidth="190.0" text="VIEW PROFILE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="AddService" layoutX="10.0" layoutY="179.0" mnemonicParsing="false" onAction="#AddServicesAction" prefHeight="60.0" prefWidth="190.0" text="ADD MARKETING REPORT" />
+                  <Button fx:id="History" layoutX="10.0" layoutY="227.0" mnemonicParsing="false" onAction="#HistoryAction" prefHeight="60.0" prefWidth="190.0" text="HISTORY" />
+                  <Button fx:id="LogOut" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#LogOutAction" prefHeight="60.0" prefWidth="190.0" text="LOG OUT" />
+               </children>
+               <stylesheets>
+                  <URL value="@../cssFiles/style1.css" />
+                  <URL value="@../cssFiles/demo2.css" />
+               </stylesheets>
+            </VBox>
+         </children>
+         <stylesheets>
+            <URL value="@../cssFiles/demo2.css" />
+            <URL value="@../cssFiles/style1.css" />
+         </stylesheets></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="548.0">
+         <children>
+            <HBox layoutX="-2.0" layoutY="-1.0" prefHeight="510.0" prefWidth="516.0">
+               <children>
+                  <HBox prefHeight="510.0" prefWidth="372.0">
+                     <children>
+                        <VBox prefHeight="398.0" prefWidth="135.0" spacing="5.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="131.0" text="ADD SERVICES">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="182.0" prefHeight="55.0" prefWidth="135.0" text="TIME:">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="237.0" prefHeight="55.0" prefWidth="135.0" text="DATE:">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="398.0" prefWidth="135.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="135.0" text="INFO">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Time" editable="false" layoutX="10.0" layoutY="180.0" prefHeight="54.0" prefWidth="132.0" />
+                              <DatePicker fx:id="date" editable="false" prefHeight="54.0" prefWidth="132.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </DatePicker>
+                              <Button fx:id="Done" mnemonicParsing="false" onAction="#DoneAction" prefHeight="47.0" prefWidth="98.0" text="DONE">
+                                 <VBox.margin>
+                                    <Insets left="25.0" top="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="417.0" prefWidth="320.0">
+                     <children>
+                        <TextField fx:id="FoodId" editable="false" maxWidth="200.0" prefHeight="54.0" prefWidth="173.0" promptText="Add Ingredient Name">
+                           <VBox.margin>
+                              <Insets left="20.0" top="72.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Ammount" editable="false" layoutX="30.0" layoutY="70.0" maxWidth="200.0" prefHeight="54.0" prefWidth="146.0" promptText="ADD AMMOUNT">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="AddMore" mnemonicParsing="false" onAction="#AddMoreAction" prefHeight="47.0" prefWidth="182.0" text="ADD MORE">
+                           <VBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="InsertComplete" layoutX="30.0" layoutY="216.0" mnemonicParsing="false" onAction="#InsertCompleteAction" prefHeight="47.0" prefWidth="189.0" text="COMPLETE INSERTION">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <stylesheets>
+            <URL value="@../cssFiles/demo2.css" />
+            <URL value="@../cssFiles/style2.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="header-section" />
+            <String fx:value="button" />
+            <String fx:value="custom-button" />
+            <String fx:value="custom-button" />
+         </styleClass>
+         </AnchorPane>
+  </items>
+</SplitPane>

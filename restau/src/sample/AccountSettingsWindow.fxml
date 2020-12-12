@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="680.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AccountSettingsWindowController">
+   <children>
+      <GridPane layoutX="76.0" layoutY="2.0" prefHeight="669.0" prefWidth="584.0" stylesheets="@../cssFiles/demo.css" vgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="344.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="BASELINE_RIGHT" prefHeight="34.0" prefWidth="175.0" text="Employee_ID:" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="11.0" prefHeight="34.0" prefWidth="175.0" text="JOB_ID:" GridPane.rowIndex="1" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="First_Name:" GridPane.rowIndex="2" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Last_Name:" GridPane.rowIndex="3" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Job_Ttile:" GridPane.rowIndex="4" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Phone_Number:" GridPane.rowIndex="5" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Hire_Date:" GridPane.rowIndex="6" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Birthdate:" GridPane.rowIndex="7" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Email:" GridPane.rowIndex="8" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="34.0" prefWidth="175.0" text="Salary:" GridPane.rowIndex="9" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="332.0" prefHeight="43.0" prefWidth="193.0" text="Commision_PCT:" GridPane.rowIndex="10" />
+            <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="332.0" prefHeight="34.0" prefWidth="175.0" text="Gender:" GridPane.rowIndex="11" />
+            <TextField fx:id="employeeIdField" editable="false" maxWidth="351.0" minHeight="40.0" prefHeight="40.0" prefWidth="351.0" GridPane.columnIndex="1" />
+            <TextField fx:id="jobIdField" editable="false" maxWidth="348.0" minHeight="40.0" prefHeight="40.0" prefWidth="348.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fNameField" minHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="lNameField" minHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="jobTitleField" editable="false" maxWidth="347.0" minHeight="40.0" prefHeight="40.0" prefWidth="347.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="phoneNoField" maxWidth="363.0" minHeight="40.0" prefHeight="44.0" prefWidth="363.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="hireDateField" editable="false" maxWidth="360.0" minHeight="40.0" prefHeight="40.0" prefWidth="360.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="birthDateField" maxWidth="346.0" minHeight="40.0" prefHeight="40.0" prefWidth="346.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="emailField" minHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="salaryField" editable="false" maxWidth="353.0" minHeight="40.0" prefHeight="40.0" prefWidth="353.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="commissionField" editable="false" maxWidth="344.0" minHeight="40.0" prefHeight="40.0" prefWidth="344.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="genderField" editable="false" maxWidth="344.0" minHeight="40.0" prefHeight="40.0" prefWidth="344.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+         </children>
+         <styleClass>
+            <String fx:value="content-section" />
+            <String fx:value="header-section" />
+         </styleClass>
+      </GridPane>
+      <Button layoutX="667.0" layoutY="640.0" mnemonicParsing="false" onAction="#saveSettings" text="Save Settings" />
+      <Button layoutX="653.0" layoutY="14.0" mnemonicParsing="false" text="Delete Account" />
+      <Button layoutX="14.0" layoutY="640.0" mnemonicParsing="false" onAction="#HOMEAction" text="Home" />
+   </children>
+   <stylesheets>
+      <URL value="@../cssFiles/style2.css" />
+      <URL value="@../cssFiles/demo2.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="button" />
+      <String fx:value="header-section" />
+      <String fx:value="root" />
+   </styleClass>
+</AnchorPane>

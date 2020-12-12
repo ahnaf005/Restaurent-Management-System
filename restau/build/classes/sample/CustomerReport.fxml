@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="798.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.CustomerReportController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="256.0">
+         <children>
+            <VBox layoutX="-1.0" prefHeight="580.0" prefWidth="395.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="67.0" prefWidth="395.0" text="Sorted List Of Customers According to their spending" />
+                  <TableView fx:id="tableView" prefHeight="435.0" prefWidth="395.0" />
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#backAction" prefHeight="41.0" prefWidth="128.0" text="BACK">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="372.0">
+         <children>
+            <VBox layoutX="-3.0" layoutY="-2.0" prefHeight="580.0" prefWidth="405.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="381.0" text="Reset the Premium Threshold spending" />
+                  <HBox prefHeight="84.0" prefWidth="405.0">
+                     <children>
+                        <TextField fx:id="threshold" prefHeight="53.0" prefWidth="160.0" promptText="Enter The New Value">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="done" mnemonicParsing="false" onAction="#doneAction" prefHeight="51.0" prefWidth="77.0" text="Done">
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="372.0" text="Search Customer Details" />
+                  <HBox prefHeight="84.0" prefWidth="405.0">
+                     <children>
+                        <TextField fx:id="customerid1" prefHeight="53.0" prefWidth="160.0" promptText="Enter The Customer ID">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="go" mnemonicParsing="false" onAction="#GoAction" prefHeight="51.0" prefWidth="77.0" text="GO">
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="188.0" prefHeight="73.0" prefWidth="405.0">
+                     <children>
+                        <Label fx:id="name" alignment="CENTER" prefHeight="57.0" prefWidth="113.0" text="Name:">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="showname" alignment="CENTER" prefHeight="59.0" prefWidth="161.0" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="272.0" prefHeight="73.0" prefWidth="405.0">
+                     <children>
+                        <Label fx:id="spentmoney" alignment="CENTER" prefHeight="57.0" prefWidth="113.0" text="Spent Money:">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="showspentmoney" alignment="CENTER" prefHeight="59.0" prefWidth="161.0" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" prefHeight="53.0" prefWidth="388.0" text="Change Customer Type" />
+                  <HBox prefHeight="80.0" prefWidth="405.0">
+                     <children>
+                        <TextField fx:id="customerid2" prefHeight="53.0" prefWidth="160.0" promptText="Enter The Customer ID">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="customertype" prefHeight="51.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <Button fx:id="confirm" mnemonicParsing="false" onAction="#confirmAction" prefHeight="38.0" prefWidth="121.0" text="CONFIRM">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="header-section" stylesheets="@../cssFiles/demo.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JoinTableController">
+    <children>
+        <Button layoutX="12.0" layoutY="458.0" mnemonicParsing="false" onAction="#showHome" text="Home" />
+        <Button layoutX="912.0" layoutY="458.0" mnemonicParsing="false" onAction="#logoutFunc" text="log out" />
+        <TableView fx:id="tableView" layoutX="20.0" layoutY="69.0" prefHeight="376.0" prefWidth="1066.0" />
+      <TextField fx:id="employee_idField" layoutX="197.0" layoutY="24.0" prefHeight="37.0" prefWidth="199.0" />
+      <TextField fx:id="customer_idField" layoutX="565.0" layoutY="25.0" prefHeight="37.0" prefWidth="199.0" />
+      <Button layoutX="832.0" layoutY="25.0" mnemonicParsing="false" onAction="#getServiceReport" text="Get Service Report" />
+      <Label layoutX="50.0" layoutY="21.0" text="Employee ID:" />
+      <Label layoutX="424.0" layoutY="23.0" text="Customer ID:" />
+    </children>
+</AnchorPane>

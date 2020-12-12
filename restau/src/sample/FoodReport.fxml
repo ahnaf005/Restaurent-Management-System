@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="header-section" stylesheets="@../cssFiles/demo2.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FoodReportController">
+   <children>
+      <VBox layoutX="10.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="682.0">
+         <children>
+            <HBox prefHeight="109.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="104.0" prefWidth="299.0" styleClass="custom-button">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="239.0" text="Total Sell Wise Sorted Results ">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="GetResults1" mnemonicParsing="false" onAction="#GetResults1Action" prefHeight="40.0" prefWidth="140.0" styleClass="custom-button" stylesheets="@../cssFiles/style2.css" text="GetResults">
+                           <VBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="104.0" prefWidth="492.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="41.0" prefWidth="200.0" text="Time Wise Sorted Results">
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="61.0" prefWidth="431.0" styleClass="custom-button">
+                           <children>
+                              <ComboBox fx:id="Time1" prefHeight="40.0" prefWidth="133.0" promptText="Start Time">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="Time2" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="125.0" promptText="End Time">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <Button fx:id="GetResults2" mnemonicParsing="false" onAction="#GetResults2Action" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@../cssFiles/style2.css" text="GetResults">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="304.0" prefWidth="673.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="custom-button">
+               <children>
+                  <Button fx:id="Back" mnemonicParsing="false" onAction="#BackAction" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@../cssFiles/style2.css" text="Back">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Clear" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onAction="#ClearAction" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@../cssFiles/style2.css" text="Clear">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

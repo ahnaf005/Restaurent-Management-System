@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.6523046092184369" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeliveryBoyWindowController">
+    <items>
+        <AnchorPane prefHeight="598.0" prefWidth="550.0">
+            <children>
+                <Button fx:id="ViewProfile11" layoutX="534.0" layoutY="245.0" mnemonicParsing="false" onAction="#submitRequest" prefHeight="40.0" prefWidth="99.0" text="Submit" />
+                <TableView fx:id="tableView" layoutX="6.0" layoutY="37.0" prefHeight="208.0" prefWidth="635.0" />
+                <TableView fx:id="pendingTableView" layoutX="6.0" layoutY="336.0" prefHeight="208.0" prefWidth="635.0" />
+                <Label layoutX="268.0" layoutY="4.0" text="Delivery Request" />
+                <Label layoutX="268.0" layoutY="299.0" text="Pending Delivery" />
+                <Button fx:id="ViewProfile111" layoutX="472.0" layoutY="551.0" mnemonicParsing="false" onAction="#deliveryComplete" prefHeight="40.0" prefWidth="161.0" text="Delivery Completed" />
+                <Button fx:id="ViewProfile112" layoutX="14.0" layoutY="245.0" mnemonicParsing="false" onAction="#Reload" prefHeight="40.0" prefWidth="99.0" text="Reload" />
+                <Button fx:id="ViewProfile1121" layoutX="423.0" layoutY="245.0" mnemonicParsing="false" onAction="#showDeliveryDetails" prefHeight="40.0" prefWidth="99.0" text="See Details" />
+                <Button fx:id="ViewProfile11211" layoutX="356.0" layoutY="551.0" mnemonicParsing="false" onAction="#showDeliveryCompleteDetails" prefHeight="40.0" prefWidth="99.0" text="See Details" />
+            </children>
+        </AnchorPane>
+        <VBox prefHeight="598.0" prefWidth="410.0" styleClass="button" stylesheets="@../cssFiles/style2.css">
+            <children>
+                <ImageView fitHeight="117.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/account-profile-user-icon--icon-search-engine-10.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="showLabel" alignment="BASELINE_LEFT" prefHeight="30.0" prefWidth="176.0" text="Label">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Label>
+                <Button fx:id="ViewProfile" mnemonicParsing="false" onAction="#profileShow" prefHeight="57.0" prefWidth="176.0" text="VIEW PROFILE">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="AddService" disable="true" layoutX="10.0" layoutY="179.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="176.0" text="ADD SERVICE" />
+                <Button fx:id="History" layoutX="10.0" layoutY="227.0" mnemonicParsing="false" onAction="#HistoryAction" prefHeight="60.0" prefWidth="176.0" text="HISTORY" />
+                <Button fx:id="LogOut" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#logoutFunc" prefHeight="62.0" prefWidth="176.0" text="LOG OUT" />
+            </children>
+        </VBox>
+    </items>
+</SplitPane>

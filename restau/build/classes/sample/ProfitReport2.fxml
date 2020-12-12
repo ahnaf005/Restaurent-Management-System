@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="header-section" stylesheets="@../cssFiles/demo2.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="12.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="779.0">
+            <children>
+                <VBox prefHeight="525.0" prefWidth="145.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="117.0" text="Monthly Sell:">
+                            <VBox.margin>
+                                <Insets top="70.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="80.0" prefHeight="38.0" prefWidth="150.0" text="Monthly Expense:">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="158.0" prefHeight="38.0" prefWidth="117.0" text="Monthly Profit:">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="236.0" prefHeight="38.0" prefWidth="117.0" text="Yearly Profit:">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="471.0" prefWidth="132.0">
+                    <children>
+                        <TextField fx:id="Year1" prefHeight="40.0" prefWidth="131.0" promptText="Enter Year">
+                            <VBox.margin>
+                                <Insets top="70.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Year2" layoutX="10.0" layoutY="80.0" prefHeight="40.0" prefWidth="131.0" promptText="Enter Year">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Year3" layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="131.0" promptText="Enter Year">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Year4" layoutX="10.0" layoutY="240.0" prefHeight="40.0" prefWidth="131.0" promptText="Enter Year">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox layoutX="139.0" layoutY="10.0" prefHeight="471.0" prefWidth="126.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="80.0" text="Reports">
+                            <VBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="Month1" prefHeight="40.0" prefWidth="125.0" promptText="Month">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="Month2" layoutX="10.0" layoutY="79.0" prefHeight="40.0" prefWidth="125.0" promptText="Month">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="Month3" layoutX="10.0" layoutY="159.0" prefHeight="40.0" prefWidth="125.0" promptText="Month">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                    </children>
+                </VBox>
+                <VBox layoutX="268.0" layoutY="10.0" prefHeight="471.0" prefWidth="129.0">
+                    <children>
+                        <Button fx:id="Go1" mnemonicParsing="false" onAction="#Go1Action" prefHeight="40.0" prefWidth="109.0" text="Go">
+                            <VBox.margin>
+                                <Insets left="20.0" top="70.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="Go2" layoutX="30.0" layoutY="80.0" mnemonicParsing="false" onAction="#Go2Action" prefHeight="40.0" prefWidth="109.0" text="Go">
+                            <VBox.margin>
+                                <Insets left="20.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="Go3" layoutX="30.0" layoutY="158.0" mnemonicParsing="false" onAction="#Go3Action" prefHeight="39.0" prefWidth="109.0" text="Go">
+                            <VBox.margin>
+                                <Insets left="20.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="Go4" layoutX="30.0" layoutY="236.0" mnemonicParsing="false" onAction="#Go4Action" prefHeight="40.0" prefWidth="109.0" text="Go">
+                            <VBox.margin>
+                                <Insets left="20.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="Back" layoutX="30.0" layoutY="319.0" mnemonicParsing="false" onAction="#BackAction" prefHeight="40.0" prefWidth="109.0" text="Back">
+                            <VBox.margin>
+                                <Insets left="20.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox layoutX="386.0" layoutY="10.0" prefHeight="471.0" prefWidth="162.0">
+                    <children>
+                        <TextField fx:id="Result1" prefHeight="40.0" prefWidth="152.0" promptText="Result">
+                            <VBox.margin>
+                                <Insets left="10.0" top="70.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Result2" layoutX="20.0" layoutY="80.0" prefHeight="40.0" prefWidth="152.0" promptText="Result">
+                            <VBox.margin>
+                                <Insets left="10.0" top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Result3" layoutX="20.0" layoutY="160.0" prefHeight="40.0" prefWidth="152.0" promptText="Result">
+                            <VBox.margin>
+                                <Insets left="10.0" top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="Result4" layoutX="20.0" layoutY="240.0" prefHeight="40.0" prefWidth="152.0" promptText="Result">
+                            <VBox.margin>
+                                <Insets left="10.0" top="40.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Button fx:id="Clear" mnemonicParsing="false" onAction="#ClearAction" prefHeight="44.0" prefWidth="117.0" text="Clear">
+                            <VBox.margin>
+                                <Insets left="30.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

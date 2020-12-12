@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RatingAndPaymentController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="435.0" prefWidth="801.0" />
+      <HBox prefHeight="165.0" prefWidth="790.0">
+         <children>
+            <Button fx:id="done1" mnemonicParsing="false" onAction="#backButton" prefHeight="49.0" prefWidth="85.0" text="Back">
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="details" mnemonicParsing="false" onAction="#detailsAction" prefHeight="49.0" prefWidth="126.0" text="DETAILS">
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="rate" layoutX="30.0" layoutY="40.0" mnemonicParsing="false" onAction="#RateAction" prefHeight="49.0" prefWidth="126.0" text="GIVE RATING">
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <VBox prefHeight="150.0" prefWidth="185.0">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <children>
+                  <TextField fx:id="ratingfield" prefHeight="49.0" prefWidth="165.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" right="20.0" top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="done" mnemonicParsing="false" onAction="#doneAction" prefHeight="42.0" prefWidth="85.0" text="DONE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="80.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="payment" mnemonicParsing="false" onAction="#PaymentAction" prefHeight="48.0" prefWidth="174.0" text="PAYMENT CLEARANCE">
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
